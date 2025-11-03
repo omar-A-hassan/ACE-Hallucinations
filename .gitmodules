@@ -1,0 +1,3 @@
+[submodule "ace"]
+	path = ace
+	url = https://github.com/omar-A-hassan/agentic-context-engine.git
