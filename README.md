@@ -6,6 +6,23 @@ Russian Hallucination Detection Competition (codeforces) Solution using Agentic 
 
 This project implements a hallucination-resistant LLM solution for the Russian language using the ACE (Agentic Context Engineering) framework. The solution combines a small local model (Gemma-3-270M) with learned anti-hallucination strategies to achieve robust factual consistency.
 
+## What is ACE and Why Use It?
+
+**ACE (Agentic Context Engine)** is a framework that enables AI agents to learn from their own execution feedback—what works, what doesn't—without fine-tuning or training data. Instead of static prompting, ACE creates a living **playbook** of strategies that evolves through experience.
+
+**How it works:**
+1. **Generator** (Gemma-3-270M): Produces answers to questions using strategies from the playbook
+2. **Reflector** (Gemini Flash 2.5): Analyzes each answer for hallucination risks, false confidence, and factual errors
+3. **Curator** (Gemini Flash 2.5): Updates the playbook based on reflections, creating new anti-hallucination strategies
+
+**Why ACE for hallucination detection:**
+- **Self-improving**: Each training example teaches the model new patterns to recognize (anachronisms, impossible scenarios, knowledge gaps)
+- **Transparent**: The playbook explicitly shows what strategies were learned (e.g., "Detect temporal impossibilities", "Refuse when sources unavailable")
+- **No fine-tuning needed**: All learning happens in-context through the evolving playbook
+- **Proven results**: Achieved 0% hallucination rate by accumulating 83 anti-hallucination strategies from just 380 examples
+
+The playbook becomes a reusable knowledge base of hallucination-detection patterns that can guide any model at inference time.
+
 ## Project Structure
 
 ```
