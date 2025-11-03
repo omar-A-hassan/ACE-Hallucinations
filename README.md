@@ -182,6 +182,6 @@ Strengths:
 
 - **ACE Framework**: Zhang et al. (2024). "Agentic Context Engineering". arXiv:2510.04618. [GitHub](https://github.com/kayba-ai/agentic-context-engine)
 
-- **SberQuAD Dataset**: Efimov et al. (2020). "SberQuAD – Russian Reading Comprehension Dataset: Description and Analysis". arXiv:1912.09723. [Dataset](https://huggingface.co/datasets/sberquad)
+- **SberQuAD Dataset**: Efimov et al. (2020). "SberQuAD – Russian Reading Comprehension Dataset: Description and Analysis". arXiv:1912.09723. [Dataset](https://huggingface.co/datasets/kuznetsoffandrey/sberquad)
 
 - **Gemma Model**: Google DeepMind (2024). "Gemma: Open Models Based on Gemini Research and Technology". [Model Card](https://huggingface.co/google/gemma-3-270m-it)
